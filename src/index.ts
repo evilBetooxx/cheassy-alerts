@@ -10,7 +10,7 @@ const apiInstance = new brevo.TransactionalEmailsApi();
 
 apiInstance.setApiKey(
   brevo.TransactionalEmailsApiApiKeys.apiKey,
-  "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"
+  process.env.ALGO || "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"
 );
 
 app.post('/send-alert', async (req, res) => {
